@@ -12,6 +12,7 @@ xpack.ml.enabled: ${XPACK_ML_ENABLED:false}
 xpack.monitoring.enabled: ${XPACK_MONITORING_ENABLED:false}
 xpack.security.enabled: ${XPACK_SECURITY_ENABLED:false}
 xpack.watcher.enabled: ${XPACK_WATCHER_ENABLED:false}
+xpack.license.self_generated.type: ${XPACK_LICENSE_TYPE:basic}
 
 # see https://github.com/floragunncom/search-guard-ssl/blob/master/src/main/java/com/floragunn/searchguard/ssl/util/SSLConfigConstants.java#L28
 searchguard.ssl.transport.enabled: ${SEARCHGUARD_SSL_TRANSPORT_ENABLED:false}
