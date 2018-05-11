@@ -2,6 +2,11 @@ FROM docker.elastic.co/elasticsearch/elasticsearch:6.2.3
 
 USER root
 
+RUN yum update -y && \
+    yum update -y nc java-1.8.0-openjdk-headless && \
+    yum clean all && \
+    rm -rf /var/cache/yum
+
 ENV JQ_VERSION 1.5
 ENV JQ_SHA256 c6b3a7d7d3e7b70c6f51b706a3b90bd01833846c54d32ca32f0027f00226ff6d
 RUN cd /tmp \
